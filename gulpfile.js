@@ -10,7 +10,8 @@ gulp.task('server', function() {
     browserSync({
         server: {
             baseDir: "src"
-        }
+        },
+        host: "192.168.0.106",
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
